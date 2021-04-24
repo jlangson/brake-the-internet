@@ -22,7 +22,7 @@ Make a pull request.
 ## Possible features
 
 - Allow customization of slow down.
--- Perhaps different settings for different sites.
+  - Perhaps different settings for different sites.
 - Make it annoying/inconvenient to remove websites from slow down list (opt-in).
 - Have suggested lists of problematic websites (reddit, facebook, twitter, instagram, pinterest, etc.)
 - Exports/imports of lists.
