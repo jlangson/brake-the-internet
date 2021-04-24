@@ -1,11 +1,14 @@
-//body = document.body;
-//body.style.background="blue";
-//body.style.opacity=0;
-function slowReveal(total_time, interval){
+function slowReveal(steps, delay, opacity_step){
 	opacity = 0;
-	for(i=0; i < total_time; i++){
-  	setTimeout(() => {document.body.style.opacity=opacity; opacity += 0.1; console.log(i)},interval*i);
+	for(i=0; i < steps; i++){
+  	setTimeout(() => {document.body.style.opacity=opacity; opacity += opacity_step; console.log("opacity=" + opacity)},delay*i);
   }
+  
+ //normally, the slowReveal will stop < 0.2 opacity so we want to fully show the page after the pause
+  setTimeout(() => {document.body.style.opacity=1;}, steps*delay+1000);
 }
 
-slowReveal(10, 2000);
+
+//good examples
+
+slowReveal(15, 2000, 0.01);
